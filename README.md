@@ -4,8 +4,8 @@
 
 The project utilized machine learning techniques to solve credit card risk. The task required different techniques to train and evaluate models with unbalanced classes.
 
-1. imbalanced-learn
-2. scikit-learn 
+1. 'imbalanced-learn'
+2. 'scikit-learn'
 
 These libraries build and evaluate models using resampling. 
 
@@ -46,7 +46,7 @@ The goal is too:
 
 ### 3. ClusterCentroids
 
-![3](hhttps://github.com/nfujikad/Credit_Risk_Analysis/blob/main/Resources/3_CLuster.png)
+![3](https://github.com/nfujikad/Credit_Risk_Analysis/blob/main/Resources/3_CLuster.png)
 
 - The balanced accuracy score is 53%.
 - For high-risk, the precision score is 1%, recall score is 61%. Only 1% of predicted high-risk are true high-risk and 61% high-risk cases are correctly identified by this model with a F1 score of 1%. 
@@ -54,7 +54,7 @@ The goal is too:
 
 ### 4.SMITEENN
 
-![4](hhttps://github.com/nfujikad/Credit_Risk_Analysis/blob/main/Resources/4_SMITEEN.png)
+![4](https://github.com/nfujikad/Credit_Risk_Analysis/blob/main/Resources/4_SMITEEN.png)
 
 - The balanced accuracy score is 64%.
 - For high-risk, the precision score is 1%, recall score is 70%. Only 1% of predicted high-risk are true high-risk and 70% high-risk cases are correctly identified by this model with a F1 score of 2%. 
