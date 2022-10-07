@@ -52,7 +52,7 @@ The goal is too:
 - For high-risk, the precision score is 1%, recall score is 61%. Only 1% of predicted high-risk are true high-risk and 61% high-risk cases are correctly identified by this model with a F1 score of 1%. 
 - For low-risk, the precision score is 100%, recall score is 45%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 45% low-risk are correctly identified with a F1 score of 62%.
 
-### 4.SMITEENN
+### 4. SMITEENN
 
 ![4](https://github.com/nfujikad/Credit_Risk_Analysis/blob/main/Resources/4_SMITEEN.png)
 
@@ -60,7 +60,7 @@ The goal is too:
 - For high-risk, the precision score is 1%, recall score is 70%. Only 1% of predicted high-risk are true high-risk and 70% high-risk cases are correctly identified by this model with a F1 score of 2%. 
 - For low-risk, the precision score is 100%, recall score is 58%. Due to the small population of high-risk and large population of low-risk, almost 100% predicted low-risk are true low-risk, and 58% low-risk are correctly identified with a F1 score of 73%.
 
-### 5.BalancedRandomForestClassifier
+### 5. BalancedRandomForestClassifier
 
 ![5](https://github.com/nfujikad/Credit_Risk_Analysis/blob/main/Resources/5_BRFC.png)
 
@@ -79,4 +79,12 @@ The goal is too:
 ## Summary
 
 In summary, `ClusterCentroids` has the lowest accuracy score, precision score, recall score and the F1 score. The best performing is `EasyEnsembleClassifier` with the highest accuracy score, precision score, recall score and F1 score. 
+
+
+### Recommendation
+With a small high-risk population, the precision scores of high-risk are extremely low for each model, and low-risk precision scores are almost 100% for all of the models. Regarding credit risk, it is of greater important to catch high-risk profiles vs. low-risk. In the anlysis the recall score for high-risk is influential, it states how many high-risk profiles can be identified among all real high-risk profiles. 
+
+The comparisons show `EasyEnsembleClassifier` has the best performance specifically for high-risk profiles, identifying 92% of real high-risk profiles. At the same time, all of the models also falsely classified a large number of high-risk that are actually low-risk profiles (low precision scores of low-risk), so that many applicants will be falsely rejected.
+
+In conclusion, if the bank just aims to catch as many high-risk as possible, `EasyEnsembleClassifier` would be the best choice. However, if the bank aims to accurately determine both low- and high-risk profiles, they should consider additional models not included in this analysis. 
 
